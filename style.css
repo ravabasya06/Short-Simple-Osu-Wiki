@@ -7,7 +7,7 @@ header {
   text-align: center;
 }
 .nav-link {
-  padding: 10px 10px;
+  padding: 10px;
   color: black;
   text-decoration: none;
   border-color: black;
@@ -49,4 +49,14 @@ header {
 }
 .center {
   text-align: center;
+}
+.nav-link:hover {
+  background-color: hsl(0, 0%, 80%);
+  padding: 15px;
+}
+#osu-link {
+  text-decoration: none;
+}
+#osu-link:hover {
+  text-decoration: underline;
 }
