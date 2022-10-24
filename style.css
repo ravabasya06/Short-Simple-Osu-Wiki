@@ -1,11 +1,16 @@
-@media screen and (min-width: 1px){
-  code {
-    text-decoration: underline;
-  }
+*{
+  box-sizing: border-box;
 }
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
 header {
   text-align: center;
 }
+
 .nav-link {
   padding: 10px;
   color: black;
@@ -15,18 +20,25 @@ header {
   margin: 3px;
   border-radius: 0.5em;
 }
+
 .nav-title {
   padding-top: 10px;
   padding-bottom: 40px;
 }
-.nav-button {
-  padding-bottom: 50px
+
+.nav-buttons {
+  padding-bottom: 50px;
+
+  display: flex;
+  flex-wrap: wrap;
 }
+
 .rainbow {
   animation-name: rainbow;
   animation-duration: 1s;
   animation-iteration-count: infinite;
 }
+
 @keyframes rainbow {
   0% {
     color: red;
@@ -47,16 +59,26 @@ header {
     color: magenta;
   }
 }
+
 .center {
   text-align: center;
 }
+
 .nav-link:hover {
   background-color: hsl(0, 0%, 80%);
   padding: 15px;
 }
+
 #osu-link {
   text-decoration: none;
 }
+
 #osu-link:hover {
   text-decoration: underline;
+}
+
+@media screen and (min-width: 1px){
+  code {
+    text-decoration: underline;
+  }
 }
